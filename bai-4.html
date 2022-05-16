@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let data = ""
+    for (let i = 0; i < 5; i++) {
+        if (i === 0 || i ===4) {
+            for (let j =0; j < 22; j++) {
+                data += "*"
+            }
+        } else {
+            for (let j = 0; j < 22; j++) {
+                if (j === 0 || j ===9 ) {
+                    data += "*"
+                } else {
+                    data += "&emsp;&nbsp"
+                }
+            }
+        }
+        data += "<br>"
+    }
+    document.write(data)
+</script>
+</body>
+</html>
